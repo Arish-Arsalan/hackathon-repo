@@ -1,0 +1,29 @@
+Test ID,Module,Test Case Description,Prerequisites,Test Steps,Expected Result,Priority,Status
+TC001,Environment Setup,Verify environment variables are properly configured,Project cloned locally,"1. Check NEXT_PUBLIC_SANITY_PROJECT_ID exists
+2. Validate Sanity project connection",Environment connects successfully,High,Passed
+TC002,Development Server,Verify development server starts correctly,Node.js installed,"1. Run npm run dev
+2. Access localhost:3000",Server starts and page loads,High,Passed
+TC003,Sanity Integration,Verify Sanity client configuration,Sanity project setup,"1. Check sanity.cli.ts configuration
+2. Validate project ID matches
+3. Test connection to Sanity",Sanity client connects successfully,High,Passed
+TC004,Live Preview,Test live content updates functionality,SanityLive component implemented,"1. Make content change in Sanity
+2. Check frontend updates
+3. Verify real-time sync",Content updates in real-time,Medium,Passed
+TC005,TypeScript Compilation,Verify TypeScript types and compilation,TypeScript configured,"1. Run TypeScript compiler
+2. Check for type errors
+3. Validate build process",No TypeScript errors,High,Passed
+TC006,API Version,Verify Sanity API version configuration,Sanity client setup,"1. Check apiVersion in live.ts
+2. Validate experimental API access
+3. Test API endpoints",API responds correctly,Medium,Passed
+TC007,Error Handling,Test environment variable assertion,Project running,"1. Remove env variables
+2. Start application
+3. Check error messages",Proper error messages shown,Medium,Passed
+TC008,Build Process,Verify production build creation,All dependencies installed,"1. Run build command
+2. Check build output
+3. Validate asset optimization",Successful build creation,High,Passed
+TC009,Font Loading,Test next/font implementation,Project running,"1. Check font loading
+2. Verify optimization
+3. Test font rendering",Fonts load optimally,Low,Passed
+TC010,Deployment,Verify Vercel deployment process,Vercel account connected,"1. Push to main branch
+2. Check deployment logs
+3. Validate live site",Successful deployment,High,Passed
